@@ -65,7 +65,7 @@ const customConfig: ShareButtonsConfig = {
     CKEditorModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: IndexComponent, pathMatch: 'full' },
       { path: 'page/:pagenum', component: HomeComponent },
       { path: 'addpost', component: BlogEditorComponent, canActivate: [AuthGuard] },
       { path: 'editpost/:id', component: BlogEditorComponent, canActivate: [AdminAuthGuard] },
