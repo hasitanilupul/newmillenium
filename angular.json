@@ -108,6 +108,14 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/ngBlogSite",
+            "netlifyToken": "7384a9c5d9405a4200bc47acf1a08392d76059dbc4464cdd80861692f18615ef",
+            "siteId": "1f0ec41f-1229-4e97-b19c-4a1a088a45ea"
+          }
         }
       }
     },
